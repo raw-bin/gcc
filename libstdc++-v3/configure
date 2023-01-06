@@ -53405,6 +53405,13 @@ done
 
     ;;
 
+  riscv64*-*-redox*)
+    SECTION_FLAGS='-ffunction-sections -fdata-sections'
+
+    $as_echo "#define HAVE_ALIGNED_ALLOC 1" >>confdefs.h
+
+    ;;
+
   *-hpux*)
     SECTION_FLAGS='-ffunction-sections -fdata-sections'
 
